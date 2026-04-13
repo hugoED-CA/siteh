@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hugoed-ca.github.io/siteh//index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//central.html</loc><priority>0.9</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//personagens.html</loc><priority>0.8</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//jogos.html</loc><priority>0.8</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//chefoes.html</loc><priority>0.8</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//informacoes.html</loc><priority>0.7</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//fotos.html</loc><priority>0.7</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//links.html</loc><priority>0.6</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//contato.html</loc><priority>0.6</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//criador.html</loc><priority>0.5</priority></url>
-  <url><loc>https://hugoed-ca.github.io/siteh//secreto/curiosidades.html</loc><priority>0.3</priority></url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/home.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/menu.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/cabecalho.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/central.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/rodape.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/personagens.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/jogos.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/chefoes.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/informacoes.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/fotos.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/links.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/criador.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hugoed-ca.github.io/siteh/contato.html</loc>
+  <lastmod>2026-04-13T12:03:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
