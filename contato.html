@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato - ThiefNet</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>
+    function validaForm() {
+      var nome = document.getElementById("nome").value;
+      var email = document.getElementById("email").value;
+      var sexo = document.querySelector('input[name="sexo"]:checked');
+      var mensagem = document.getElementById("mensagem").value;
+
+      if (nome === "") { alert("Por favor, preencha seu nome."); return false; }
+      if (email === "" || email.indexOf("@") === -1) { alert("Por favor, informe um e-mail válido."); return false; }
+      if (!sexo) { alert("Por favor, selecione o sexo."); return false; }
+      if (mensagem === "") { alert("Por favor, escreva uma mensagem."); return false; }
+
+      alert("Mensagem enviada com sucesso! Obrigado, " + nome + "!");
+      return false;
+    }
+  </script>
+</head>
+<body class="pagina">
+  <h1 class="pagina-titulo">Contato</h1>
+  <p class="pagina-texto">Tem alguma sugestão, dúvida ou quer falar sobre Sly Cooper? Preencha o formulário abaixo!</p>
+
+  <form onsubmit="return validaForm()" style="max-width:500px; margin-top:20px;">
+
+    <div class="form-grupo">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+    </div>
+
+    <div class="form-grupo">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com">
+    </div>
+
+    <div class="form-grupo">
+      <label>Sexo:</label>
+      <label style="color:#e2e8f0; font-size:14px;">
+        <input type="radio" name="sexo" value="Feminino"> Feminino
+      </label>
+      &nbsp;&nbsp;
+      <label style="color:#e2e8f0; font-size:14px;">
+        <input type="radio" name="sexo" value="Masculino"> Masculino
+      </label>
+    </div>
+
+    <div class="form-grupo">
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" placeholder="Ex: Sugestão de conteúdo">
+    </div>
+
+    <div class="form-grupo">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" style="width:100%; max-width:400px; background:#1e293b; border:1px solid #475569; color:#f1f5f9; padding:6px 10px; border-radius:4px; font-size:14px;" placeholder="Escreva sua mensagem aqui..."></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+  </form>
+
+  <h2 class="pagina-subtitulo" style="margin-top:30px;">Informações de Contato</h2>
+  <table style="max-width:400px;">
+    <tr>
+      <th>Canal</th>
+      <th>Endereço</th>
+    </tr>
+    <tr>
+      <td>E-mail</td>
+      <td>hugo.canassa@aluno.uniube.br</td>
+    </tr>
+    <tr>
+      <td>Instituição</td>
+      <td>Uniube - Uberaba, MG</td>
+    </tr>
+    <tr>
+      <td>Disciplina</td>
+      <td>Tecnologias para Internet</td>
+    </tr>
+  </table>
+</body>
+</html>

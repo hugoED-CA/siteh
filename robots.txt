@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /secreto/
+
+Sitemap: https://hugoed-ca.github.io/siteh/sitemap.xml
