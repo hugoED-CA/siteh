@@ -1,0 +1,226 @@
+/* ThiefNet - Sly Cooper Site */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+a {
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c4b5fd;
+  text-decoration: underline;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #1e1b4b;
+  padding: 8px 16px;
+  text-align: center;
+  border-bottom: 2px solid #7c3aed;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* Menu lateral */
+.menu-body {
+  background-color: #0f172a;
+  padding: 10px;
+  height: 100%;
+}
+
+.menu-logo {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 130px;
+}
+
+.menu-titulo {
+  color: #c084fc;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 16px;
+  font-family: Georgia, serif;
+}
+
+.menu-nav a {
+  display: block;
+  color: #7dd3fc;
+  padding: 6px 4px;
+  font-size: 13px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.menu-nav a:hover {
+  background-color: #1e293b;
+  color: #e0f2fe;
+  text-decoration: none;
+}
+
+.menu-nav a.voltar {
+  color: #34d399;
+  margin-top: 10px;
+}
+
+/* Página central */
+.pagina {
+  background-color: #0f172a;
+  padding: 20px 30px;
+  min-height: 100vh;
+}
+
+.pagina-titulo {
+  text-align: center;
+  color: #fbbf24;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.pagina-subtitulo {
+  color: #a78bfa;
+  font-size: 1.3em;
+  margin: 16px 0 8px;
+}
+
+.pagina-texto {
+  color: #e2e8f0;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+table td, table th {
+  border: 1px solid #334155;
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #1e293b;
+  color: #fbbf24;
+  text-align: left;
+}
+
+table tr:nth-child(even) td {
+  background-color: #1e293b;
+}
+
+table tr:nth-child(odd) td {
+  background-color: #0f172a;
+}
+
+/* Imagens */
+img.personagem {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #7c3aed;
+  border-radius: 4px;
+  max-width: 320px;
+}
+
+/* Galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.galeria img {
+  width: 280px;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid #7c3aed;
+  border-radius: 4px;
+}
+
+/* Formulário */
+.form-grupo {
+  margin-bottom: 14px;
+}
+
+.form-grupo label {
+  display: block;
+  color: #e2e8f0;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px 10px;
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  color: #f1f5f9;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-grupo input[type="radio"] {
+  margin-right: 6px;
+}
+
+.btn-enviar {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-enviar:hover {
+  background-color: #6d28d9;
+}
+
+/* Listas */
+ul, ol {
+  color: #e2e8f0;
+  line-height: 1.8;
+  padding-left: 22px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1e1b4b;
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  color: #94a3b8;
+  border-top: 2px solid #7c3aed;
+  margin-top: 30px;
+}
+
+/* Links externos */
+.lista-links a {
+  color: #7dd3fc;
+  font-size: 15px;
+}
+
+.lista-links li {
+  margin-bottom: 8px;
+}
