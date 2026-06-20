@@ -1,25 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QVB2652D2K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QVB2652D2K');
-</script>
-    <meta charset="UTF-8">
-    <title>ThiefNet - Sly Cooper</title>
-    <link rel="stylesheet" href="css/estilo.css">
-  </head>
-  <frameset cols="170px,*">
-    <frame src="menu.html" name="menu">
-    <frame src="home.html" name="home">
-    <noframes>
-      <body>
-        <p>Seu navegador não suporta frames. <a href="home.html">Clique aqui para acessar o site.</a></p>
-      </body>
-    </noframes>
-  </frameset>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ThiefNet, site sobre a franquia de jogos Sly Cooper, com personagens, jogos, curiosidades e links para conhecer melhor a saga.">
+  <meta name="keywords" content="Sly Cooper, ThiefNet, jogos, PlayStation, personagens, Uniube">
+  <meta name="author" content="Hugo Edmundo Canassa">
+  <meta name="google-site-verification" content="SUBSTITUA_PELO_CODIGO_DO_SEARCH_CONSOLE">
+  <title>ThiefNet - Sly Cooper</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script src="js/menu.js" defer></script>
+</head>
+<body class="site-body">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ThiefNet - pagina inicial">
+      <img src="imagens/logo1.jpg" alt="Logo Sly Cooper" class="brand-img">
+      <span class="brand-text">ThiefNet</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="site-menu" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="site-menu" aria-label="Menu principal">
+      <a href="index.html">In&iacute;cio</a>
+      <a href="personagens.html">Personagens</a>
+      <a href="jogos.html">Jogos</a>
+      <a href="chefoes.html">Chef&otilde;es</a>
+      <a href="informacoes.html">Informa&ccedil;&otilde;es</a>
+      <a href="fotos.html">Fotos</a>
+      <a href="links.html">Links</a>
+      <a href="criador.html">Criador</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-kicker">Projeto de Tecnologias para Internet</p>
+        <h1 id="hero-title">ThiefNet</h1>
+        <p>
+          Um guia visual sobre o universo de <strong>Sly Cooper</strong>, reunindo personagens,
+          jogos, curiosidades e informa&ccedil;&otilde;es para quem quer conhecer melhor a franquia.
+        </p>
+        <div class="hero-actions" aria-label="Acoes principais">
+          <a class="btn-primary" href="personagens.html">Ver personagens</a>
+          <a class="btn-secondary" href="jogos.html">Conhecer jogos</a>
+        </div>
+      </div>
+      <img src="imagens/nlogo.png" alt="Logo ThiefNet" class="hero-logo">
+    </section>
+
+    <section class="intro-grid" aria-label="Resumo do site">
+      <article class="intro-card">
+        <h2>Franquia</h2>
+        <p>
+          A s&eacute;rie acompanha Sly Cooper e sua equipe em aventuras com furtividade,
+          humor e miss&otilde;es inspiradas em grandes roubos.
+        </p>
+      </article>
+      <article class="intro-card">
+        <h2>Equipe</h2>
+        <ul>
+          <li><strong>Sly Cooper:</strong> protagonista &aacute;gil e esperto.</li>
+          <li><strong>Bentley:</strong> estrategista e especialista em tecnologia.</li>
+          <li><strong>Murray:</strong> parceiro forte e entusiasmado.</li>
+        </ul>
+      </article>
+      <article class="intro-card">
+        <h2>Navega&ccedil;&atilde;o</h2>
+        <p>
+          Use o menu para acessar personagens, chef&otilde;es, galeria, links externos,
+          informa&ccedil;&otilde;es do criador e a p&aacute;gina de contato.
+        </p>
+      </article>
+    </section>
+
+    <section class="content-band" aria-labelledby="numbers-title">
+      <div>
+        <h2 id="numbers-title">Sobre a franquia em n&uacute;meros</h2>
+        <p>
+          A tabela resume alguns dados principais da franquia e refor&ccedil;a a organiza&ccedil;&atilde;o
+          do conte&uacute;do em formato claro para leitura.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Informa&ccedil;&atilde;o</th>
+            <th>Dado</th>
+          </tr>
+          <tr>
+            <td>N&uacute;mero de jogos principais</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Plataformas</td>
+            <td>PlayStation 2, PlayStation 3, PlayStation Vita</td>
+          </tr>
+          <tr>
+            <td>Desenvolvedora original</td>
+            <td>Sucker Punch Productions</td>
+          </tr>
+          <tr>
+            <td>Desenvolvedora de Sly 4</td>
+            <td>Sanzaru Games</td>
+          </tr>
+          <tr>
+            <td>Ano do primeiro jogo</td>
+            <td>2002</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hugo Edmundo Canassa | RA: 5167754 | Uniube | ThiefNet &copy; 2026</p>
+  </footer>
+</body>
 </html>
