@@ -1,15 +1,30 @@
 /* ThiefNet - Sly Cooper Site */
 
+:root {
+  --cor-fundo: #0f172a;
+  --cor-superficie: #172033;
+  --cor-superficie-2: #1e293b;
+  --cor-primaria: #7c3aed;
+  --cor-secundaria: #0ea5e9;
+  --cor-destaque: #fbbf24;
+  --cor-texto: #f1f5f9;
+  --cor-texto-suave: #cbd5e1;
+  --fonte-texto: Arial, sans-serif;
+  --fonte-titulo: Georgia, serif;
+  --sombra: 0 18px 45px rgba(0, 0, 0, 0.28);
+  --raio: 8px;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--fonte-texto);
   margin: 0;
   padding: 0;
-  background-color: #0f172a;
-  color: #f1f5f9;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
 }
 
 h1, h2, h3 {
-  font-family: Georgia, serif;
+  font-family: var(--fonte-titulo);
 }
 
 a {
@@ -20,6 +35,327 @@ a {
 a:hover {
   color: #c4b5fd;
   text-decoration: underline;
+}
+
+.site-body {
+  min-height: 100vh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px clamp(16px, 4vw, 48px);
+  background: rgba(15, 23, 42, 0.96);
+  border-bottom: 2px solid var(--cor-primaria);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--cor-texto);
+  font-weight: 700;
+}
+
+.brand:hover {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+.brand-img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border: 2px solid var(--cor-primaria);
+  border-radius: var(--raio);
+}
+
+.brand-text {
+  font-family: var(--fonte-titulo);
+  font-size: 1.35rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.site-nav a {
+  color: var(--cor-texto-suave);
+  padding: 9px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--cor-texto);
+  background-color: var(--cor-superficie-2);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-superficie-2);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--cor-texto);
+  border-radius: 999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  content: "";
+}
+
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  transform: translateY(5px);
+}
+
+.menu-toggle.is-open .hamburger {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.is-open .hamburger::before {
+  opacity: 0;
+}
+
+.menu-toggle.is-open .hamburger::after {
+  transform: translateY(-2px) rotate(90deg);
+}
+
+.site-main {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 6vw, 72px);
+  min-height: 72vh;
+  padding: clamp(36px, 8vw, 86px) 0;
+}
+
+.hero-content {
+  max-width: 660px;
+  animation: surgir 0.75s ease both;
+}
+
+.hero-kicker {
+  color: #7dd3fc;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-size: 0.82rem;
+}
+
+.hero h1 {
+  color: var(--cor-destaque);
+  font-size: clamp(2.5rem, 8vw, 5.4rem);
+  line-height: 1;
+  margin: 10px 0 16px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero p {
+  color: var(--cor-texto-suave);
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.hero-logo {
+  width: min(360px, 36vw);
+  max-height: 360px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.45));
+  animation: flutuar 3.5s ease-in-out infinite;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--cor-primaria);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--cor-superficie-2);
+  color: var(--cor-texto);
+  border: 1px solid #334155;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.intro-grid {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 34px;
+}
+
+.intro-card {
+  flex: 1 1 0;
+  padding: 20px;
+  background: var(--cor-superficie);
+  border: 1px solid #2d3b52;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.intro-card h2,
+.content-band h2 {
+  color: var(--cor-destaque);
+  margin-top: 0;
+}
+
+.intro-card p,
+.intro-card li,
+.content-band p {
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+.content-band {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 28px 0 52px;
+}
+
+.content-band > div {
+  flex: 1 1 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.site-footer {
+  border-top: 2px solid var(--cor-primaria);
+  background: #111827;
+  color: #94a3b8;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.92rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.pagina > .site-header {
+  margin: -20px -30px 30px;
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 8px;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px;
+    background: var(--cor-superficie);
+  }
+
+  .hero {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-logo {
+    width: min(260px, 80vw);
+    align-self: center;
+  }
+
+  .intro-grid,
+  .content-band {
+    flex-direction: column;
+  }
 }
 
 /* Cabeçalho */
